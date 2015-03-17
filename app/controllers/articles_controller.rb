@@ -11,6 +11,13 @@ class ArticlesController < ApplicationController
     @article = Article.new
   end
   
+  def destroy
+  @article = Article.find(params[:id])
+  @article.destroy
+ 
+  redirect_to articles_path
+  end
+  
   def create
    @article = Article.new(article_params)
  
