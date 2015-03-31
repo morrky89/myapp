@@ -1,13 +1,16 @@
 class ApplicationController < ActionController::Base
   # Prevent CSRF attacks by raising an exception.
   # For APIs, you may want to use :null_session instead.
-   before_filter :authenticate_user!
+  # before_filter :authenticate_user!
 
   
   def index
     @articles = Article.all
   end
  
+  rescue_from CanCan::AccessDenied do |exception|
+    redirect_to root_url, :alert => exception.message
+  end
   # snipped for brevity
   protect_from_forgery with: :exception
 end
