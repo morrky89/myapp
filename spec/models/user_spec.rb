@@ -1,6 +1,9 @@
 require 'rails_helper'
 
 describe User do
+  
+it { should validate_presence_of :first_name }
+  
   before :each do
     @user = User.new(first_name: 'John', last_name: 'Smith')
   end
@@ -23,3 +26,5 @@ describe User do
   end
   
 end
+  
+
