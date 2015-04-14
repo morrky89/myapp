@@ -3,6 +3,7 @@ class ArticlesController < ApplicationController
   
   def index
     @articles = Article.all
+    #p @articles.inspect
   end
  
   def show
