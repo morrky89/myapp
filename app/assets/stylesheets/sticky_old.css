@@ -1,7 +1,5 @@
 /* Sticky footer styles
 -------------------------------------------------- */
-a:hover { text-decoration: none; }
-
 html {
   position: relative;
   min-height: 100%;
@@ -11,8 +9,9 @@ body {
   margin-bottom: 60px;
 }
 .footer {
-  position: absolute;
+  position: fixed;
   bottom: 0;
+  left: 0;
   width: 100%;
   /* Set the fixed height of the footer here */
   height: 60px;
