@@ -37,3 +37,6 @@ describe ArticlesController do
   end
 end
 
+#within '#dealer' do
+# find('a').click()
+#end
