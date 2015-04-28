@@ -12,6 +12,7 @@ class Ability
         comment.try(:commenter) == user.email
       end
       can :read, :all
+      can :manage, Article
     end
   end
 end
