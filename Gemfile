@@ -21,6 +21,8 @@ gem "twitter-bootstrap-rails"
 
 gem "haml-rails", "~> 0.9"
 
+gem  "paperclip", "~> 4.2"
+
 
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
